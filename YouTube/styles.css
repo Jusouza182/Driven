@@ -1,0 +1,84 @@
+body {
+    background-color: white;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+  p {
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+  img {
+    height: 180px;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+  a {
+    margin-top: 2px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+  }
+  .topo {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    height: 40px;
+    width: 80px;
+    background-color: yellow;
+  }
+  .busca {
+    height: 40px;
+    width: 450px;
+    background-color: orange;
+  }
+  .outros {
+    height: 40px;
+    width: 150px;
+    background-color: grey;
+  }
+  .menu-lateral {
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 300px;
+  }
+  .menu-lateral img {
+    height: 40px;
+  }
+  
+  .botao-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .botao-menu:hover {
+    color: red;
+    cursor: pointer;
+  }
+  
+  .conteudo {
+    display: flex;
+  }
+  .conteiner {
+    margin-left: 20px;
+    width: 100%;
+    background-color: #f9f9f9;
+  }
+  .video {
+    margin-right: 20px;
+  }
+  
+  .grupo-videos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
