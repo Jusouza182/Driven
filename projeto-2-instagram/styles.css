@@ -1,3 +1,6 @@
+body {
+  background-color: #fafafa;
+}
 .barra {
   background-color: #ffffff;
   position: fixed;
@@ -5,24 +8,27 @@
   left: 0px;
   height: 54px;
   width: 100vw;
+}
+.connteudo-barra {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  margin: 0 20.5%;
   align-items: center;
 }
-.barra > .divisor {
+.connteudo-barra > .divisor {
   width: 1px;
   height: 22px;
   background-color: #dbdbdb;
   margin-top: 6px;
   margin-left: 8px;
 }
-.barra > ion-icon {
+.connteudo-barra > ion-icon {
   width: 22px;
   height: 22px;
   margin-top: 6px;
-  margin-left: 215px;
 }
-.barra > img {
+.connteudo-barra > img {
   width: 103px;
   height: 29px;
   margin-top: 15px;
@@ -32,15 +38,15 @@
   border: 1px solid #dbdbdb;
   background-color: #fafafa;
   border-radius: 3px;
-  margin: 6px auto;
+  margin: 10px auto;
   text-align: center;
   width: 215px;
   height: 28px;
 }
-.icones > ion-icon{
-    width: 22px;
-    height: 22px;
-    margin-top: 6px;
+.icones > ion-icon {
+  width: 22px;
+  height: 22px;
+  margin-top: 6px;
 }
 .conteiner {
   background-color: #fafafa;
@@ -50,10 +56,43 @@
 }
 .conteudo-central {
   width: 614px;
-  background-color: black;
 }
 .stories {
-  background-color: blueviolet;
+  background-color: #ffffff;
+  margin-top: calc(88px - 54px);
+  border: 1px solid #dbdbdb;
+  height: 118px;
+  display: flex;
+  flex-direction: row;
+}
+.margem-stories {
+  width: 66px;
+  height: 66px;
+  margin: 15px 10px;
+}
+.logos-stories {
+  width: 56px;
+  height: 56px;
+  margin-left: -71px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+}
+.conteudo-stories > p {
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 58px;
+  height: 19px;
+  text-align: center;
+  margin-top: -15px;
+  margin-left: 10px;
+}
+.conteudo-stories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 7px;
 }
 .publicacoes {
   background-color: brown;
