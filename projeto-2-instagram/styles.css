@@ -1,0 +1,64 @@
+.barra {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 54px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.barra > .divisor {
+  width: 1px;
+  height: 22px;
+  background-color: #dbdbdb;
+  margin-top: 6px;
+  margin-left: 8px;
+}
+.barra > ion-icon {
+  width: 22px;
+  height: 22px;
+  margin-top: 6px;
+  margin-left: 215px;
+}
+.barra > img {
+  width: 103px;
+  height: 29px;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.pesquisa {
+  border: 1px solid #dbdbdb;
+  background-color: #fafafa;
+  border-radius: 3px;
+  margin: 6px auto;
+  text-align: center;
+  width: 215px;
+  height: 28px;
+}
+.icones > ion-icon{
+    width: 22px;
+    height: 22px;
+    margin-top: 6px;
+}
+.conteiner {
+  background-color: #fafafa;
+  margin-top: 54px;
+  display: flex;
+  justify-content: center;
+}
+.conteudo-central {
+  width: 614px;
+  background-color: black;
+}
+.stories {
+  background-color: blueviolet;
+}
+.publicacoes {
+  background-color: brown;
+}
+.sidebar {
+  background-color: green;
+  width: 293px;
+}
