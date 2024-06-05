@@ -1,5 +1,10 @@
 body {
   background-color: #fafafa;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+strong {
+  font-weight: 500;
 }
 .barra {
   background-color: #ffffff;
@@ -64,6 +69,7 @@ body {
   height: 118px;
   display: flex;
   flex-direction: row;
+  margin-bottom: 24px;
 }
 .margem-stories {
   width: 66px;
@@ -94,10 +100,215 @@ body {
   align-items: center;
   margin-right: 7px;
 }
+#seta {
+  width: 32px;
+  height: 32px;
+  margin-left: -100px;
+  margin-top: 40px;
+  color: rgba(0, 0, 0, 0.25);
+}
 .publicacoes {
-  background-color: brown;
+  margin-bottom: 60px;
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  height: 749px;
+  width: 614px;
+}
+.publicacoes > img {
+  height: 612px;
+  width: 100%;
+}
+.barra-top-post {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.barra-top-post > img {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  margin: 10px;
+}
+.barra-top-post > p {
+  font-size: 14px;
+  font-weight: 500;
+}
+.barra-top-post > ion-icon {
+  margin-left: 75%;
+}
+.icons-botton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px;
+}
+.icones-1 > ion-icon,
+.icons-botton > ion-icon {
+  width: 22px;
+  height: 22px;
+  margin: 5px;
+}
+
+.curtidas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 5px;
+}
+.curtidas > img {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin: 5px;
 }
 .sidebar {
-  background-color: green;
+  background-color: #fafafa;
   width: 293px;
+}
+.usuario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+.usuario > img {
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+  margin-right: 15px;
+  margin-left: 30px;
+}
+
+.barra-2 {
+  width: 293px;
+  height: 9px;
+  background-color: #fafafa;
+  margin: 20px 30px;
+}
+.nome-de-usuario > p,
+.titulo-recomendacoes > p {
+  color: #8e8e8e;
+}
+.titulo-recomendacoes {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  justify-content: space-between;
+  margin-left: 30px;
+  width: 293px;
+}
+.titulo-recomendacoes > h6 > strong {
+  margin-right: 5px;
+}
+.recomendacoes-seguir {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+  margin-top: 20px;
+  width: 298px;
+}
+.usuario-sujerido > img {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}
+.texto {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+.usuario-sujerido {
+  display: flex;
+  flex-direction: row;
+}
+.usuario-sujerido > .texto > h6 > strong {
+  font-size: 14px;
+}
+.usuario-sujerido > .texto > p {
+  color: #8e8e8e;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.seguir > p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #139ef2;
+  margin-right: 10px;
+}
+.sobre > p {
+  color: #c7c7c7;
+  font-size: 11px;
+  font-weight: 400;
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 300px;
+}
+.barra-3 {
+  width: 60px;
+  height: 105px;
+  background-color: #fafafa;
+  color: #fafafa;
+  margin-left: -50px;
+}
+
+@media (max-width: 935px) {
+  .sidebar {
+    display: none;
+  }
+}
+@media (max-width: 614px) {
+  .pesquisa {
+    display: none;
+  }
+  .divisor {
+    display: none;
+  }
+  .stories {
+    width: 100vw;
+    background-color: #fafafa;
+    margin: 0;
+  }
+  .conteudo-central {
+    width: 100vw;
+  }
+  .barra-3 {
+    display: none;
+  }
+  .barra {
+    width: 100%;
+  }
+  .icones :nth-child(2),
+  .icones :nth-child(3),
+  .icones :nth-child(4) {
+    display: none;
+  }
+  .connteudo-barra {
+    justify-content: space-between;
+    margin: 0 5px;
+  }
+  .barra-botton {
+    width: 100%;
+    height: 54px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  .barra-botton > ion-icon {
+    width: 22px;
+    height: 22px;
+    margin: 5px;
+  }
+  #seta {
+    display: none;
+  }
 }
