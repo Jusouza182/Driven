@@ -48,7 +48,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 img {
   width: 144px;
@@ -191,7 +190,22 @@ img {
 .cancelarPedido{
     margin-top: 0px;
 }
+.precos{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
 
 .esconder{
     display: none;
+}
+.adcBorda{
+  border: 5px solid #32B72F;
+}
+.icon{
+    color:#32B72F;
+    margin-top: 25px;
+    margin-right: 5px;
+    width: 19px;
+    height: 19px;
 }
