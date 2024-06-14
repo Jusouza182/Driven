@@ -7,3 +7,13 @@ console.log(nomeDoPrato);
 
 return nomeDoPrato; //retorna o nome dos pratos para o código
 }
+
+function selecionarBebida(bebida){ 
+    bebida.classList.add('adcBorda'); 
+    let icon = bebida.querySelector('ion-icon'); 
+    icon.classList.remove('esconder'); 
+    let nomeDaBebida = bebida.querySelector('.nomePrato').innerHTML; 
+    console.log(nomeDaBebida); 
+    
+    return nomeDaBebida; 
+    }
