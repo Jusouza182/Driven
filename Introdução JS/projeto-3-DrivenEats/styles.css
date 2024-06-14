@@ -1,0 +1,30 @@
+body{
+    width: 414px;
+    height: 608px;
+    background-color: #EEEEEE;
+}
+.cabecalho{
+    width: 414px;
+    background-color: #CF2B2B;
+    height: 92px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0, 0.25);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.nome{
+    color: #FFFFFF;
+    font-size: 44px;
+    font-family: Righteous;
+    margin-left: 21px;
+
+}
+.slogan{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 21px;
+}
