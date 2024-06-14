@@ -118,9 +118,80 @@ img {
   font-weight: 400;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Escondidos */ 
+
 .botaoSelecionado{
     background-color: #32B72F;
 }
-::-webkit-scrollbar {
-    width: 0px;
+
+.pedido{
+    z-index: 1;
+    width: 414px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.50);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardPedido{
+    width: 377px;
+    height: 353px;
+    border-radius: 9px;
+    background-color: #50D074 ;
+    display: flex;
+    flex-direction: column;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+
+}
+.escolha, .total{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.tituloPedido, .resumoPedido, .totalPedido, .cancelarPedido, .precoPedido, .precoTotal{
+    margin: 15px auto;
+    font-size: 22px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    color:#ffffff;
+    margin-top: 15px;
+}
+.resumoPedido , .precoPedido{
+    font-weight: 400;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.precoTotal, .precoPedido{
+    margin-right: 15px;
+}
+.totalPedido{
+    margin-left: 15px;
+}
+.botaoFinalizar{
+    width: 329px;
+    height: 52px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    margin: 10px auto;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #50D074;
+}
+.cancelarPedido{
+    margin-top: 0px;
+}
+
+.esconder{
+    display: none;
 }
