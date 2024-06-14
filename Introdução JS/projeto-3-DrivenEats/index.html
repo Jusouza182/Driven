@@ -46,7 +46,7 @@
       <div class="menu-1">
         <p class="tituloMenu">Primeiro, seu prato</p>
         <div class="pratos">
-          <div class="card">
+          <div class="card" onclick="selecionarPrato(this)">
             <img
               src="/Introdução JS/projeto-3-DrivenEats/fotos/pf_frango.jpg"
               alt="frango"
@@ -59,7 +59,7 @@
             </div>
             
           </div>
-          <div class="card">
+          <div class="card" onclick="selecionarPrato(this)" >
             <img
               src="/Introdução JS/projeto-3-DrivenEats/fotos/pf_carne.jpg"
               alt="carne"
@@ -71,7 +71,7 @@
                 <ion-icon class="icon esconder" name="checkmark-circle"></ion-icon>
             </div>
           </div>
-          <div class="card">
+          <div class="card" onclick="selecionarPrato(this)">
             <img
               src="/Introdução JS/projeto-3-DrivenEats/fotos/pf_calabresa.png"
               alt="calabresa"
@@ -171,13 +171,15 @@
       </div>
     </div>
     <div class="rodape">
-      <button class="botaoPedido">
+      <button class="botaoPedido" onclick="selecionarPrato()">
         Selecione os 3 itens para fechar o pedido
       </button>
     </div>
     
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script href="script.js"></script>
-  </body>
+    <script src="/Introdução JS/projeto-3-DrivenEats/script.js"></script>
+
+</body>
+
 </html>
