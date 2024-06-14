@@ -5,54 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
 
     <title>DrivenEats</title>
   </head>
   <body>
     <div class="cabecalho">
-        <h1 class="nome"> DrivenEats</h1>
-        <p class="slogan">Sua comida em 6 minutos</p>
+      <h1 class="nome">DrivenEats</h1>
+      <p class="slogan">Sua comida em 6 minutos</p>
     </div>
     <div class="conteudo">
       <div class="menu-1">
         <p class="tituloMenu">Primeiro, seu prato</p>
-        <div class="card">
-          <img src="" alt="" />
-          <p class="nomePrato">Frango Yin Yang</p>
-          <p class="resumoPrato">Um pouco de batata, um pouco de salada</p>
-          <p class="precoPrato">R$ 14,90</p>
+        <div class="pratos">
+          <div class="card">
+            <img
+              src="/Introdução JS/projeto-3-DrivenEats/fotos/pf_frango.jpg"
+              alt="frango"
+            />
+            <p class="nomePrato">Frango grelhado</p>
+            <p class="resumoPrato">Frango grelhado, arroz, feijão e salada</p>
+            <p class="precoPrato">R$ 14,90</p>
+          </div>
+          <div class="card">
+            <img
+              src="/Introdução JS/projeto-3-DrivenEats/fotos/pf_carne.jpg"
+              alt="carne"
+            />
+            <p class="nomePrato">Carne</p>
+            <p class="resumoPrato">Carne, arroz, feijão, batata e salada</p>
+            <p class="precoPrato">R$ 14,90</p>
+          </div>
+          <div class="card">
+            <img
+              src="/Introdução JS/projeto-3-DrivenEats/fotos/pf_calabresa.png"
+              alt="calabresa"
+            />
+            <p class="nomePrato">Calabresa refogada</p>
+            <p class="resumoPrato">
+              Calabresa refogada, arroz, feijão e batata
+            </p>
+            <p class="precoPrato">R$ 14,90</p>
+          </div>
         </div>
       </div>
       <div class="menu-2">
         <p class="tituloMenu">Agora, sua bebida</p>
-        <div class="card">
-          <img src="" alt="" />
-          <p class="nomePrato">Coquinha gelada</p>
-          <p class="resumoPrato">Lata 350ml</p>
-          <p class="precoPrato">R$ 4,90</p>
+        <div class="pratos">
+          <div class="card">
+            <img
+              src="/Introdução JS/projeto-3-DrivenEats/fotos/coca.png"
+              alt="coca"
+            />
+            <p class="nomePrato">Coca gelada</p>
+            <p class="resumoPrato">Lata 350ml</p>
+            <p class="precoPrato">R$ 4,90</p>
+          </div>
+          <div class="card">
+            <img
+              src="/Introdução JS/projeto-3-DrivenEats/fotos/fanta-removebg-preview.png"
+              alt="fanta"
+            />
+            <p class="nomePrato">Fanta gelada</p>
+            <p class="resumoPrato">Lata 350ml</p>
+            <p class="precoPrato">R$ 4,90</p>
+          </div>
+          <div class="card">
+            <img
+              src="/Introdução JS/projeto-3-DrivenEats/fotos/suco.png"
+              alt="suco"
+            />
+            <p class="nomePrato">Suco gelada</p>
+            <p class="resumoPrato">Lata 350ml</p>
+            <p class="precoPrato">R$ 4,90</p>
+          </div>
         </div>
       </div>
       <div class="menu-3">
         <p class="tituloMenu">Por fim, sua sobremesa</p>
-        <div class="card">
-          <img src="" alt="" />
-          <p class="nomePrato">Pudim</p>
-          <p class="resumoPrato">Apenas pudim</p>
-          <p class="precoPrato">R$ 7,90</p>
+        <div class="pratos">
+          <div class="card">
+            <img
+              src="/Introdução JS/projeto-3-DrivenEats/fotos/pudim.jpg"
+              alt="pudim"
+            />
+            <p class="nomePrato">Pudim</p>
+            <p class="resumoPrato">Apenas pudim</p>
+            <p class="precoPrato">R$ 7,90</p>
+          </div>
+          <div class="card">
+            <img
+              src="/Introdução JS/projeto-3-DrivenEats/fotos/brownie.jpg"
+              alt="brownie"
+            />
+            <p class="nomePrato">Brownie</p>
+            <p class="resumoPrato">Apenas brownie</p>
+            <p class="precoPrato">R$ 7,90</p>
+          </div>
+          <div class="card">
+            <img
+              src="/Introdução JS/projeto-3-DrivenEats/fotos/mouse.jpg"
+              alt="mouse"
+            />
+            <p class="nomePrato">Mouse</p>
+            <p class="resumoPrato">Apenas mouse</p>
+            <p class="precoPrato">R$ 7,90</p>
+          </div>
         </div>
       </div>
     </div>
     <div class="rodape">
-        <button></button>
+      <button class="botaoPedido">
+        Selecione os 3 itens para fechar o pedido
+      </button>
     </div>
     <div class="pedido">
+      <div class="div cardPedido">
         <p class="tituloPedido"></p>
         <ul class="resumoPedido"></ul>
-        <button class="botaoPedido"></button>
+        <button class="botaoFinalizar"></button>
         <p class="cancelarPedido"></p>
+      </div>
     </div>
 
     <script href="script.js"></script>
