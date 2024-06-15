@@ -104,17 +104,17 @@ function botaoPedido(botao) {
     let resumoP = pedido.querySelector(".resumoP");
     resumoP.innerHTML = `${nomeDoPrato}`;
     let precoP = pedido.querySelector(".precoP");
-    precoP.innerHTML = `R$${precoDoPratoSelecionado}`;
+    precoP.innerHTML = `${precoDoPratoSelecionado}`;
 
     let resumoBebida = pedido.querySelector(".resumoBebida");
     resumoBebida.innerHTML = `${nomeDaBebida}`;
     let precoBebida = pedido.querySelector(".precoBebida");
-    precoBebida.innerHTML = `R$${precoDaBebidaSelecionado}`;
+    precoBebida.innerHTML = `${precoDaBebidaSelecionado}`;
 
     let resumoSobremesa = pedido.querySelector(".resumoSobremesa");
     resumoSobremesa.innerHTML = `${nomeDaSobremesa}`;
     let precoSobremesa = pedido.querySelector(".precoSobremesa");
-    precoSobremesa.innerHTML = `R$ ${precoDaSobremesaSelecionado}`;
+    precoSobremesa.innerHTML = `${precoDaSobremesaSelecionado}`;
 
     calcularTotal();
   }
@@ -124,9 +124,9 @@ function calcularTotal() {
   // soma os valores depois de transforma-los em numeros decimais e mudar virgula para ponto, só assim o PC entende.
 
   valorTotal =
-    parseFloat(precoDoPratoSelecionado.replace(",", ".")) +
-    parseFloat(precoDaBebidaSelecionado.replace(",", ".")) +
-    parseFloat(precoDaSobremesaSelecionado.replace(",", "."));
+    parseFloat(precoDoPratoSelecionado.replace("R$", "").replace(",", ".")) +
+    parseFloat(precoDaBebidaSelecionado.replace("R$", "").replace(",", ".")) +
+    parseFloat(precoDaSobremesaSelecionado.replace("R$", "").replace(",", "."));
 
   // formata para o valor ser mostrando com virgula
   let valorFormatado = valorTotal.toLocaleString("pt-BR", {
