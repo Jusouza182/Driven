@@ -138,3 +138,26 @@ function calcularTotal() {
   let total = document.querySelector(".precoTotal");
   total.innerHTML = `R$ ${valorFormatado}`;
 }
+
+function finalizar() {
+  let nomePrato = pratoSelecionado.querySelector(".nomePrato").innerHTML;
+  let nomeBebida = bebidaSelecionada.querySelector(".nomePrato").innerHTML;
+  let nomeSobremesa =
+    sobremesaSelecionada.querySelector(".nomePrato").innerHTML;
+
+  let mensagem =
+    `Olá, gostaria de fazer o pedido:\n` +
+    `- Prato: ${nomePrato}\n` +
+    `- Bebida: ${nomeBebida}\n` +
+    `- Sobremesa: ${nomeSobremesa}\n` +
+    `Total: R$ ${valorTotal.toFixed(2).replace(".", ",")}`;
+
+  // Codifica a mensagem para formato de URL
+  let mensagemCodificada = encodeURIComponent(mensagem);
+
+  // Monta o link para enviar via WhatsApp
+  let whatsappLink = `https://wa.me/48996214896/?text=${mensagemCodificada}`;
+
+  //Abre o Whatsapp
+  window.open(whatsappLink, "_blank");
+}
