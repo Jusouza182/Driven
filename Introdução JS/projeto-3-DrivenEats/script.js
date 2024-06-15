@@ -161,3 +161,12 @@ function finalizar() {
   //Abre o Whatsapp
   window.open(whatsappLink, "_blank");
 }
+function cancelar(){
+    pedido = document.querySelector(".pedido");
+    pedido.classList.add("esconder");
+
+}
+
+/* 
+Ao clicar no botao cancelar, preciso que add a classe escondido ao pedido
+*/ 
