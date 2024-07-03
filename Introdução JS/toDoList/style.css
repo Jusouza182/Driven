@@ -1,0 +1,63 @@
+body{
+    background-color: aquamarine;
+}
+.container{
+   width: 350px;
+   margin: 30% auto;
+   background-color: azure;
+}
+.title, .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header {
+    background-color: black;
+    color: white;
+    height: 35px;
+    align-items: center;
+
+}
+.header h1{
+    margin-left: 10px;
+
+}
+.header ion-icon {
+    background-color: rgb(252, 223, 5);
+    height: 20px;
+}
+.header button {
+    display: flex;
+    align-items: center;
+    background-color: rgb(252, 223, 5);
+    border: none;
+    margin-right: 10px;
+    height: 20px;
+}
+
+.title input{
+    border: none;
+    background-color: rgb(232, 231, 231);
+    width: 90%;
+}
+
+.title button{
+    border: none;
+    background-color: rgb(253, 6, 220);
+    color: white;
+    height: 35px;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+    background-color: rgb(228, 222, 216);
+    border: 1px solid rgb(211, 210, 210);
+}
+
+.finalizada {
+    text-decoration: line-through;
+    font-style: italic;
+    background-color: #a3a1af;
+}

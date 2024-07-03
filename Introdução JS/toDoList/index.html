@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do List</title>
+    <link rel="stylesheet" href="/Introdução JS/toDoList/reset.css" />
+    <link rel="stylesheet" href="/Introdução JS/toDoList/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>TO-DO LIST(3)</h1>
+        <button onclick="finalizarTodas()"><ion-icon name="checkbox-outline"></ion-icon></button>
+      </div>
+
+      <div class="title">
+        <input type="text" placeholder="Add New To-do" />
+        <button>Add</button>
+      </div>
+
+      <ul>
+        <li >
+          <div class="btn-delete">
+            <ion-icon name="trash-outline"></ion-icon>
+          </div>
+          <span onclick="finalizarTarefa(this)">Adicione uma tarefa o botão acima </span>
+        </li>
+        <li>
+            <div class="btn-delete">
+                <ion-icon name="trash-outline"></ion-icon>
+              </div>
+          <span onclick="finalizarTarefa(this)"> Passe o mouse na tarefa para ver o botão excluir</span>
+        </li>
+        <li>
+            <div class="btn-delete">
+                <ion-icon name="trash-outline"></ion-icon>
+              </div>
+          <span onclick="finalizarTarefa(this)">Clique na tarefa para marca-la como feita </span>
+        </li>
+      </ul>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+      type="text/javascript"
+      src="/Introdução JS/toDoList/script.js"
+    ></script>
+  </body>
+</html>
