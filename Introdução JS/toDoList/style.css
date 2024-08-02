@@ -2,7 +2,7 @@ body{
     background-color: aquamarine;
 }
 .container{
-   width: 350px;
+   width: 370px;
    margin: 30% auto;
    background-color: azure;
 }
@@ -60,4 +60,21 @@ li {
     text-decoration: line-through;
     font-style: italic;
     background-color: #a3a1af;
+}
+.btn-delete{
+    background-color: #e74c3c;
+    color: #fff;
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+    width: 0px;
+    opacity: 0;
+    transition: all 0.2s;
+}
+.btn-delete ion-icon{
+    margin-top: 4px;
+}
+li:hover div.btn-delete{
+    width: 40px;
+    opacity: 1.0;
 }
